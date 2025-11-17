@@ -1,0 +1,45 @@
+.reactifs {
+    background-color: var(--color-primary);
+    color: var(--color-black);
+
+    .btn {
+        background-color: var(--color-white);
+        color: var(--color-black);
+    }
+    .btn:hover {
+        background-color: rgba($color: #fff, $alpha: 0.4);
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        @media (width <= $breakpoint-sm) {
+            display: block;
+        }
+
+        &:nth-child(even) {
+            .card__content {
+                order: unset;
+            }
+        }
+    }
+    .swiper-pagination {
+        position: static;
+        --swiper-pagination-bullet-horizontal-gap: 15px;
+        margin-top: 50px;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: var(--color-black);
+
+        border-radius: 0;
+
+        height: 20px;
+        width: 20px;
+        transform: rotate(45deg);
+    }
+    .swiper-pagination-bullet-active {
+        background-color: var(--color-white);
+    }
+}

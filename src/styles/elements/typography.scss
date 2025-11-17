@@ -2,7 +2,6 @@
    TYPOGRAPHY / ELEMENT
    ========================================================================== */
 
-h1,
 h2,
 h3,
 h4,
@@ -10,10 +9,14 @@ h5,
 h6 {
     font-family: var(--font-primary);
     line-height: 1;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 h1 {
+    font-family: var(--font-secondary);
+    line-height: 1;
+    font-weight: bold;
+
     font-size: var(--font-size-h1);
     margin: 0;
     color: var(--color-primary);
@@ -21,11 +24,14 @@ h1 {
 
 h2 {
     font-size: var(--font-size-h2);
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
+    margin-top: 0;
+    margin-bottom: 100px;
 }
 
 h3 {
     font-size: var(--font-size-h3);
+    text-transform: uppercase;
 }
 
 h4 {
@@ -38,4 +44,14 @@ h5 {
 
 h6 {
     font-size: var(--font-size-h6);
+}
+
+span {
+    font-weight: 300;
+    opacity: 55%;
+}
+
+h3,
+p {
+    margin: 0;
 }
